@@ -1,0 +1,12 @@
+{
+  "name": "ApexIDE_FineGrained",
+  "description": "Salesforceの開発者コンソールで隠れている機能を有効化します。",
+  "manifest_version": 2,
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://*.salesforce.com/_ui/common/apex/debug/ApexCSIPage"],
+      "js": ["ApexIDE_FineGrained.js"]
+    }
+  ]
+}
